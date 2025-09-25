@@ -9,6 +9,10 @@ import Cart from "./pages/Cart";
 import Checkout from "./pages/Checkout";
 import Payment from "./pages/Payment";
 import Footer from "./Footer";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Privacy from "./pages/Privacy";
+import Terms from "./pages/Terms";
 
 
 function App() {
@@ -34,6 +38,10 @@ function App() {
         <Route path="/cart" element={<Cart cart={cart} removeFromCart={removeFromCart} />} />
         <Route path="/checkout" element={<Checkout cart={cart} />} />
         <Route path="/payment" element={<Payment cart={cart} />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/privacy" element={<Privacy />} />
+        <Route path="/terms" element={<Terms />} />  
       </Routes>
     </Router>
 
